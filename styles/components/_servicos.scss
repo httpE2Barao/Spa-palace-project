@@ -9,6 +9,7 @@
         .card{
             width: 360px;
             text-align: center;
+            align-self: center;
             h5{
                 font-size: calc(#{$tamanho-texto} / 1.7);
                 font-weight: 400;
@@ -31,11 +32,19 @@
             }
         }
     }
+    @media screen and (max-width: 430px){
+        & {
+            .cards{
+                .card{
+                    width: 85vw;
+                }
+            }
+        }
+    }
     @media screen and (max-width: 700px){
         & {
             padding: 50px 7vw 30px 7vw;
             .cards{
-                display: inline-block;
                 flex-direction: column;
                 .card{
                     justify-self: center;
