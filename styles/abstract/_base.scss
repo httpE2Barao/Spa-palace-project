@@ -1,0 +1,41 @@
+@import './variaveis';
+
+html {
+    font-family: $fonte;   
+    background-color: $cor-fundo;
+    overflow-x: hidden;
+}
+main { 
+    display: flex;
+    flex-direction: column;
+}
+.titulo-texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            background-color: $cor-secundaria;
+            height: 20px;
+            padding: 20px 30px;
+            margin: 30px;
+            border-radius: 30px;
+    
+            font-size: calc(#{$tamanho-texto} / 2.5);
+            text-transform: uppercase;
+            font-weight: 500;
+            color: $cor-fundo;
+        }
+        h4{
+            margin: 30px 0 60px 0;
+            font-size: calc(#{$tamanho-texto} / 1.5);
+            font-weight: 400;
+            color: $cor-secundaria;
+        }
+        p{
+            max-width: 600px;
+            font-size: calc(#{$tamanho-texto} / 3);
+            padding: 0 10px 40px 10px;
+            color: $cor-terciaria;
+            line-height: 1.25em;
+        }
+    }

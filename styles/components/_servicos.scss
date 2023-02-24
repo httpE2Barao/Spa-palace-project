@@ -1,0 +1,46 @@
+@import '../abstract/variaveis';
+
+#servicos{
+    padding: 50px 80px 30px 80px;
+    text-align: center;
+    .cards{
+        display: flex;
+        justify-content: space-evenly;
+        .card{
+            width: 360px;
+            text-align: center;
+            h5{
+                font-size: calc(#{$tamanho-texto} / 1.7);
+                font-weight: 400;
+                margin-bottom: 9px;
+                color: $cor-primaria;
+            }
+            p{
+                font-size: calc(#{$tamanho-texto} / 3);
+                padding: 0 10px 40px 10px;
+                color: $cor-terciaria;
+                line-height: 1.25em;
+            }
+            .img-container{
+                padding-bottom: 3px;
+                margin-bottom: 10px;
+                border-bottom: 3px solid $cor-secundaria;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 700px){
+        & {
+            padding: 50px 7vw 30px 7vw;
+            .cards{
+                display: inline-block;
+                flex-direction: column;
+                .card{
+                    justify-self: center;
+                }
+            }
+        }
+    }
+}

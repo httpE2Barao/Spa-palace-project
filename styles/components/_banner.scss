@@ -1,0 +1,27 @@
+.banner{
+    min-height: 450px;
+    background: url(../../imagens/banner.jpeg) 27% center no-repeat;
+    opacity: .9;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .inner-banner{
+        text-align: center;
+        padding: $tamanho-texto;
+        opacity: .8;
+        background-color: $cor-fundo;
+        border-radius: 40px;
+        h1{
+            font-size: $tamanho-texto;
+            font-weight: bold;
+            color: $cor-primaria;
+            padding-bottom: 20px;
+        }
+        h2{
+            font-size: calc(#{$tamanho-texto} / 2);
+            font-weight: 500;
+            color: $cor-primaria;
+        }
+    }
+}

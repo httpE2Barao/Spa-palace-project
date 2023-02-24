@@ -1,0 +1,227 @@
+@import url(styles/abstract/_variaveis.scss);
+@import url(styles/abstract/_variaveis.scss);
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #FAF8F1;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo-texto h3 {
+  background-color: #E5BA73;
+  height: 20px;
+  padding: 20px 30px;
+  margin: 30px;
+  border-radius: 30px;
+  font-size: calc(3rem / 2.5);
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #FAF8F1;
+}
+.titulo-texto h4 {
+  margin: 30px 0 60px 0;
+  font-size: calc(3rem / 1.5);
+  font-weight: 400;
+  color: #E5BA73;
+}
+.titulo-texto p {
+  max-width: 600px;
+  font-size: calc(3rem / 3);
+  padding: 0 10px 40px 10px;
+  color: #d3a65d;
+  line-height: 1.25em;
+}
+
+nav {
+  text-align: center;
+  background-color: #FAF8F1;
+}
+nav ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: #C58940;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid #E5BA73;
+}
+
+.banner {
+  min-height: 450px;
+  background: url(../../imagens/banner.jpeg) 27% center no-repeat;
+  opacity: 0.9;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .inner-banner {
+  text-align: center;
+  padding: 3rem;
+  opacity: 0.8;
+  background-color: #FAF8F1;
+  border-radius: 40px;
+}
+.banner .inner-banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #C58940;
+  padding-bottom: 20px;
+}
+.banner .inner-banner h2 {
+  font-size: calc(3rem / 2);
+  font-weight: 500;
+  color: #C58940;
+}
+
+#servicos {
+  padding: 50px 80px 30px 80px;
+  text-align: center;
+}
+#servicos .cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+#servicos .cards .card {
+  width: 360px;
+  text-align: center;
+}
+#servicos .cards .card h5 {
+  font-size: calc(3rem / 1.7);
+  font-weight: 400;
+  margin-bottom: 9px;
+  color: #C58940;
+}
+#servicos .cards .card p {
+  font-size: calc(3rem / 3);
+  padding: 0 10px 40px 10px;
+  color: #d3a65d;
+  line-height: 1.25em;
+}
+#servicos .cards .card .img-container {
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #E5BA73;
+}
+#servicos .cards .card .img-container img {
+  max-width: 100%;
+}
+@media screen and (max-width: 700px) {
+  #servicos {
+    padding: 50px 7vw 30px 7vw;
+  }
+  #servicos .cards {
+    display: inline-block;
+    flex-direction: column;
+  }
+  #servicos .cards .card {
+    justify-self: center;
+  }
+}
+
+#cupom {
+  width: 70vw;
+  background-color: #E5BA73;
+  text-align: center;
+  padding: 4rem;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  align-self: center;
+}
+#cupom .texto {
+  color: #FAF8F1;
+}
+#cupom .texto h2 {
+  margin-bottom: 2rem;
+  font-size: calc(3rem / 1.5);
+}
+#cupom .input {
+  margin: 0 auto 30px auto;
+  width: 70vw;
+  border-radius: 50px;
+  border: 4px solid #FAF8F1;
+  background-color: #FAF8F1;
+}
+#cupom .input input {
+  width: 70vw;
+  height: 30px;
+  text-align: center;
+  font-size: calc(3rem / 2);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+#cupom .input:hover, #cupom .input:focus-within {
+  box-shadow: 1px 1px 8px 1px #C58940;
+}
+#cupom button {
+  color: #C58940;
+  background-color: #FAF8F1;
+  text-transform: uppercase;
+  font-size: calc(3rem / 3.5);
+  font-weight: bold;
+  margin-top: 0.15rem;
+  height: 50px;
+  width: 130px;
+  border-radius: 30px;
+  border: none;
+  transition: transform 0.3s;
+}
+#cupom button:hover {
+  transform: translate(0, -5px);
+  transition: transform 0.4s;
+  cursor: pointer;
+  border: 2px solid #C58940;
+}
+
+footer {
+  text-align: center;
+  font-size: calc(3rem / 3);
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 2px solid #E5BA73;
+  background-color: #E5BA73;
+  color: white;
+}
+footer i {
+  color: #FAF8F1;
+}
+
+#reflexao {
+  text-align: center;
+  padding: 20px;
+}
+#reflexao .img-container img {
+  border-radius: 50px;
+}
+#reflexao .titulo-texto {
+  margin: 50px 7vw 30px 7vw;
+}
+#reflexao .titulo-texto h3 {
+  min-width: 200px;
+}
+#reflexao .titulo-texto h4 {
+  margin: 60px 0;
+}
+#reflexao .titulo-texto p {
+  font-size: 1.2rem;
+  line-height: 2em;
+}
+@media screen and (max-width: 700px) {
+  #reflexao .img-container img {
+    width: 80vw;
+  }
+}/*# sourceMappingURL=style.css.map */
